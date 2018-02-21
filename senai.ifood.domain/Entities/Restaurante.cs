@@ -5,6 +5,7 @@ namespace senai.ifood.domain.Entities
 {
     public class Restaurante : BaseDomain
     {
+       [Required]
        public string Nome { get; set; }
        public string Responsaval { get; set; }
        public string Site { get; set; }

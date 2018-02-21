@@ -5,6 +5,7 @@ namespace senai.ifood.domain.Entities
 {
     public class Produto : BaseDomain
     {
+        [Required]
         public string Nome { get; set; }
         public string Descricao { get; set; }
         public decimal Valor { get; set; }
