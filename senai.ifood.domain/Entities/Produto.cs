@@ -12,6 +12,7 @@ namespace senai.ifood.domain.Entities
         public string Nome { get; set; }
         [StringLength(500)]
         public string Descricao { get; set; }
+        [DataType(DataType.Currency)]
         public decimal Valor { get; set; }
         public bool Ativo { get; set; }
 

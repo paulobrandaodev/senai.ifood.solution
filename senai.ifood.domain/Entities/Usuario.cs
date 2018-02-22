@@ -12,6 +12,7 @@ namespace senai.ifood.domain.Entities
         public string Email { get; set; }
         [Required]
         [StringLength(250,MinimumLength=6)]
+        [DataType(DataType.Password)]
         public string Senha { get; set; }
 
         public ICollection<UsuarioPermissao> UsuarioPermissoes {get; set;}
